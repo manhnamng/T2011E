@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
- int n,min,ok=0;
+ int n,min,x=0;
  printf("nhap so phan tu :");scanf("%d",&n);
  int a[n];
  for(int i=1;i<=n;i++){
@@ -16,10 +16,10 @@ int main(){
  for(int i=1;i<=n;i++){
  	if(a[i]<=min&&a[i]>0){
  		min=a[i];
- 		ok=1;
+ 		x=1;
 	}
  }
- if(ok==0){
+ if(x==0){
    printf("Khong co so duong");
  }
  else
